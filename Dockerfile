@@ -13,4 +13,5 @@ COPY --from=build /app ./
 # COPY --from=build /app/.env.production ./.env.production
 RUN npm install -g serve
 EXPOSE 3000
+
 CMD ["npm", "start"]
